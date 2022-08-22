@@ -43,8 +43,12 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "custom_hooks",
       filename: "remoteEntry.js",
-      remotes: {},
-      exposes: {},
+      remotes: {
+        shell_app: "shell_app@http//:localhost:8080/remoteEntry.js",
+      },
+      exposes: {
+        "./Counter": "./src/pages/counter/Counter",
+      },
       shared: {
         ...deps,
         react: {
