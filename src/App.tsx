@@ -1,14 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Container } from "./components/molecules/container/Container";
 
 import "./index.css";
+import { Counter } from "./pages/Counter/Counter";
 
-const App = () => (
-  <div className="container">
-    <div>Name: custom_hooks</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
-);
+const App = () => <Counter />;
 ReactDOM.render(<App />, document.getElementById("app"));
