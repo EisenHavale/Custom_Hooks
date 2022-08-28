@@ -1,9 +1,7 @@
 import React from "react";
+import { ITitleProps } from "../../../interfaces/atoms-interfaces";
 
-interface ITitleProps {
-  text: string;
-  fontSize?: "small" | "medium" | "large";
-}
+
 
 export const Title = ({ text, fontSize }: ITitleProps) => {
   return <h1>{text}</h1>;

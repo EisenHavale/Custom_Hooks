@@ -1,11 +1,7 @@
 import React from "react";
+import { IButtonProp } from "../../../interfaces/atoms-interfaces";
 
-interface IButtonProp {
-  text: string;
-  disabled?: boolean;
-  icon?: string;
-  onClick: () => void;
-}
+
 
 export const Button = ({ text, disabled = false, onClick }: IButtonProp) => {
   return (
