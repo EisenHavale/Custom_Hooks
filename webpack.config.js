@@ -47,7 +47,9 @@ module.exports = {
         shell_app: "shell_app@http//:localhost:8080/remoteEntry.js",
       },
       exposes: {
-        "./Counter": "./src/pages/counter/Counter",
+        // "./Counter": "./src/pages/counter/Counter",
+        "./AppShared": "./src/AppShared",
+
       },
       shared: {
         ...deps,
