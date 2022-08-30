@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ITitleProps } from "../../../interfaces/atoms-interfaces";
+import { CompoundCardContext } from '../../../app/card-context/CardContext';
 
-interface ITitleProps {
-  text: string;
-  fontSize?: "small" | "medium" | "large";
-}
 
 export const Title = ({ text, fontSize }: ITitleProps) => {
-  return <h1>{text}</h1>;
+  const { title } = useContext(CompoundCardContext);
+  return <h1>{(text) ? text : (title)? title : 'No title' }</h1>;
 };
