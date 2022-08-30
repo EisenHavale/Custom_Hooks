@@ -8,7 +8,7 @@ const nothing = ()=>{
     console.log('Nothing important')
 }
 const card:ICardContext = {
-    title:'Card Name',
+    title:'',
     groupButton: {
          buttons: [
             {
@@ -19,7 +19,8 @@ const card:ICardContext = {
     },
     footer:{
         text: 'Nothing really',
-    }
+    },
+    text:''
 };
 
 

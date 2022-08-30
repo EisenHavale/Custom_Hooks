@@ -12,10 +12,11 @@ export interface IButtonGroup {
 export interface ICardContext {
     title: string;
     groupButton: IButtonGroup;
-    footer: ITitleProps;
+    text: string;
+    footer?: ITitleProps;
 }
 
-export interface ICardProps {d
+export interface ICardProps {
     card:ICardContext;
-    children: ReactNode;
+    children?: ReactNode;
 }

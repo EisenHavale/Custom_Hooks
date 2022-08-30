@@ -6,6 +6,6 @@ export interface IButtonProp {
 }
 
 export interface ITitleProps {
-    text: string;
+    text?: string;
     fontSize?: "small" | "medium" | "large";
 }
